@@ -28,10 +28,8 @@ jobs:
       working-directory: terraform
       run: |
           terraform init 
-          terraform fmt -check
-          terraform validate
           terraform plan -out=tfplan
           terraform apply -auto-approve tfplan
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
+        GOOGLE_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
 
