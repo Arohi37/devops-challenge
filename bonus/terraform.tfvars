@@ -1,4 +1,4 @@
-name = "devops"
+name = "devops-bonus"
 project = "disco-ivy-454320-u0"
 region = "us-central1"
 
