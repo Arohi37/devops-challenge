@@ -40,7 +40,7 @@ This repository contains Terraform scripts to automate the provisioning of infra
 - Currently, only the /terraform directory has been deployed, which sets up the base infrastructure and application.
 - For enhanced scalability and high availability, users can navigate to the /bonus directory and execute the Terraform scripts there, which include managed instance groups with autoscaling.
 - Once the script is pushed to GitHub, GitHub Actions is automatically triggered. The CI/CD pipeline is configured to run whenever a commit is pushed to the main branch, executing the Terraform scripts located in the /terraform directory.
-- Upon successful execution of the GitHub Actions workflow, the following output confirms the pipeline ran successfully:![](assets/pipeline-execution-success.png)
+- Upon successful execution of the GitHub Actions workflow, the following output confirms the pipeline ran successfully: ![](assets/pipeline-execution-success.png)
 - The services are deployed to Google Cloud Platform (GCP), and the Flask application running on the Compute Engine instance can be accessed via the browser using: http://<EXTERNAL_IP>:80. The expected application output appears as shown below: ![](assests/instance-output.png)
 
 ---
